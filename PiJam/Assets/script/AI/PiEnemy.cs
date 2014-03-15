@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PiEnemy : MonoBehaviour {
+public class PiEnemy : EndlessRunner {
 
 	public float speed;
 	public Sprite deadEnemy;
@@ -20,6 +20,7 @@ public class PiEnemy : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "Player")
 		{
+			GameDirector.Instance.Die();
 			print("GameOver");
 		}
 	}

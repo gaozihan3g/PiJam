@@ -37,11 +37,15 @@ public class CharacterControl : EndlessRunner
 	public bool jumpDownGuesture=false;
 
 	[HideInInspector]
+	public bool isDie=false;
+
+	[HideInInspector]
 	public bool shotGuesture=false;
 
 	public Transform shotPos;
 	public GameObject pee;
 	public float bulletSpeed;
+
 
 	// private bool isUpper=false;
 
@@ -53,6 +57,11 @@ public class CharacterControl : EndlessRunner
 		// Setting up references.
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
+	}
+
+	void Start()
+	{
+
 	}
 
 
@@ -168,7 +177,12 @@ public class CharacterControl : EndlessRunner
 		a=(GameObject)Instantiate (pee,shotPos.position,Quaternion.identity);
 		a.rigidbody2D.velocity = Vector2.right * bulletSpeed;
 	}
-	
-	
+
+	public void Die()
+	{
+		//show UI
+		isDie = true;
+		Destroy (this.gameObject);
+	}
 
 }

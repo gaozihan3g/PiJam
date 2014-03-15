@@ -3,9 +3,22 @@ using System.Collections;
 
 public class GuestureManager : MonoBehaviour {
 
+	private bool pausing=false;
+
+
 
 	void OnTap(TapGesture gesture) 
 	{
+		if(GameDirector.Instance.isPaused)
+		{
+			pausing=true;
+			return;
+		}
+		if(pausing)
+		{
+			pausing=false;
+			return;
+		}
 		//jump
 		CharacterControl.Instance.jumpFuction ();
 	}
