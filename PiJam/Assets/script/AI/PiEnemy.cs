@@ -4,6 +4,7 @@ using System.Collections;
 public class PiEnemy : MonoBehaviour {
 
 	public float speed;
+	public Sprite deadEnemy;
 
 	// Use this for initialization
 	void Start () {
@@ -21,5 +22,11 @@ public class PiEnemy : MonoBehaviour {
 		{
 			print("GameOver");
 		}
+	}
+
+	void Die()
+	{
+		print("Die");
+
 	}
 }
