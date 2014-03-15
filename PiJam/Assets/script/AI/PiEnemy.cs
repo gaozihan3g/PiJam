@@ -47,11 +47,20 @@ public class PiEnemy : EndlessRunner {
 		rigidbody2D.fixedAngle = false;
 		rigidbody2D.AddTorque(-5000f);
 		Destroy(gameObject, 2f);
+<<<<<<< HEAD
 	}
 
 	void OnGUI()
 	{
 		if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
 			Die();
+=======
+>>>>>>> FETCH_HEAD
 	}
+
+//	void OnGUI()
+//	{
+//		if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
+//			Die();
+//	}
 }
