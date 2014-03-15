@@ -17,9 +17,8 @@ public class MicrophoneInputManager : MonoBehaviour {
 
 	public float interval = 0.5f;
 	private float timer = 0f;
-
-	public GameObject player;
 	
+
 
     void Start() {
         audio.clip = Microphone.Start("Built-in Microphone", true, 10, 44100);
@@ -66,7 +65,7 @@ public class MicrophoneInputManager : MonoBehaviour {
 	{
 		if (CheckCooldown())
 		{
-			player.SendMessage("shot");
+			CharacterControl.Instance.SendMessage("shot");
 		}
 	}
 
