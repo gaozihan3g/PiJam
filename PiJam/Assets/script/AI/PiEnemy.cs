@@ -48,9 +48,9 @@ public class PiEnemy : MonoBehaviour {
 		Destroy(gameObject, 2f);
 	}
 
-	void OnGUI()
-	{
-		if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
-			Die();
-	}
+//	void OnGUI()
+//	{
+//		if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
+//			Die();
+//	}
 }
