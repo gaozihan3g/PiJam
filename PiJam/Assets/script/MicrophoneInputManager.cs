@@ -4,8 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 
 public class MicrophoneInputManager : MonoBehaviour {
-
-	public static MicrophoneInputManager Instance;
+	
     public float sensitivity = 100;
     public float loudness = 0;
 	public float threshold;
@@ -17,13 +16,10 @@ public class MicrophoneInputManager : MonoBehaviour {
 	}
 
 	public float interval = 0.5f;
-	public bool fire = false;
 	private float timer = 0f;
 
-	void Awake()
-	{
-		Instance = this;
-	}
+	public GameObject player;
+	
 
     void Start() {
         audio.clip = Microphone.Start("Built-in Microphone", true, 10, 44100);
@@ -68,15 +64,21 @@ public class MicrophoneInputManager : MonoBehaviour {
 
 	void Fire()
 	{
-		fire = true;
-		print(fire);
+		if (CheckCooldown())
+		{
+			player.SendMessage("shot");
+		}
 	}
 
-//	bool CheckCooldown()
-//	{
-//		if (Time.time - )
-//		{}
-//	}
+	bool CheckCooldown()
+	{
+		if (Time.time - timer > interval)
+		{
+			timer = Time.time;
+			return true;
+		}
+		return false;
+	}
 
 
 

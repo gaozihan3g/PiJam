@@ -73,7 +73,7 @@ public class CharacterControl : EndlessRunner
 //		{
 //			jump = true;
 //		}
-		Debug.Log (Physics2D.GetIgnoreLayerCollision (LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("UpperPlatform")));
+//		Debug.Log (Physics2D.GetIgnoreLayerCollision (LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("UpperPlatform")));
 	}
 
 
