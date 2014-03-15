@@ -26,7 +26,7 @@ public class CharacterControl : EndlessRunner
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
-	public static CharacterControl Instance=new CharacterControl();
+	public static CharacterControl Instance;
 
 
 	//for guesture control
