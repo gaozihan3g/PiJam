@@ -32,8 +32,11 @@ public class GuestureManager : MonoBehaviour {
 		switch (gesture.Direction)
 		{
 		case FingerGestures.SwipeDirection.Down:
+			if(CharacterControl.Instance.isUpper)
+			{
+				CharacterControl.Instance.jumpDownFunction();
 
-			CharacterControl.Instance.jumpDownFunction();
+			}
 			break;
 //		
 //		case FingerGestures.SwipeDirection.Right:

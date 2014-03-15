@@ -46,6 +46,9 @@ public class CharacterControl : EndlessRunner
 	public GameObject pee;
 	public float bulletSpeed;
 
+	[HideInInspector]
+	public bool isUpper=false;
+
 
 	// private bool isUpper=false;
 
@@ -76,7 +79,8 @@ public class CharacterControl : EndlessRunner
 		//Debug.Log (Physics2D.GetIgnoreLayerCollision(LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("UpperPlatform")));
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
 
-		//isUpper=Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("UpperPlatform"));
+		//to know whether the character is on the upper platform to use it in the gesture control(cannot call jumpdown function if is not there) 
+		isUpper=Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("UpperPlatform"));
 //		// If the jump button is pressed and the player is grounded then the player should jump.
 //		if(Input.GetButtonDown("Jump") && grounded)
 //		{
