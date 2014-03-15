@@ -72,11 +72,11 @@ public class MicrophoneInputManager : MonoBehaviour {
 		print(fire);
 	}
 
-	bool CheckCooldown()
-	{
-		if (Time.time - )
-		{}
-	}
+//	bool CheckCooldown()
+//	{
+//		if (Time.time - )
+//		{}
+//	}
 
 
 
