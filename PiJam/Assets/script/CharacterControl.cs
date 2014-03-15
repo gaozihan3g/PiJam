@@ -80,10 +80,10 @@ public class CharacterControl : EndlessRunner
 	void FixedUpdate ()
 	{
 		vSpeed = rigidbody2D.velocity.y;
-		if(jumpDown && vSpeed<0)
-		{
-			jumpDown=false;
-		}
+//		if(jumpDown && vSpeed<0)
+//		{
+//			jumpDown=false;
+//		}
 //
 //		//is it falling down?
 //		if(!grounded && vSpeed<0)
@@ -117,10 +117,12 @@ public class CharacterControl : EndlessRunner
 	{
 
 		//when want to disable the collision, need to disconnect two colliders first! so need to jump a little bit
-		this.rigidbody2D.AddForce(Vector2.up*250);
+		//this.rigidbody2D.AddForce(Vector2.up*250);
 		
 		//StartCoroutine(notActiveCollision(0.1f));
 		//but when this is falling down, the collider will be actived due to the code in update
+		this.transform.position += Vector3.up*0.5f;
+
 		Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("UpperPlatform"));////////////////////////////////not functioning
 		//no collision
 		jumpDown = true;

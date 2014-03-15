@@ -21,14 +21,12 @@ public class GuestureManager : MonoBehaviour {
 		case FingerGestures.SwipeDirection.Down:
 
 			CharacterControl.Instance.jumpDownFunction();
-
-			//CharacterControl.Instance.jumpDownController=true;
 			break;
-		
-		case FingerGestures.SwipeDirection.Right:
-
-			CharacterControl.Instance.shot();
-			break;
+//		
+//		case FingerGestures.SwipeDirection.Right:
+//
+//			CharacterControl.Instance.shot();
+//			break;
 
 		}
 
