@@ -32,7 +32,7 @@ public class MicrophoneInputManager : MonoBehaviour {
         while (!(Microphone.GetPosition("Built-in Microphone") > 0)){} // Wait until the recording has started
         audio.Play(); // Play the audio source!
 
-//		timer = Time
+		timer = Time.time;
     }
 
     void Update(){
@@ -71,6 +71,13 @@ public class MicrophoneInputManager : MonoBehaviour {
 		fire = true;
 		print(fire);
 	}
+
+	bool CheckCooldown()
+	{
+		if (Time.time - )
+		{}
+	}
+
 
 
 }
