@@ -34,6 +34,7 @@ public class GameDirector : MonoBehaviour {
 
 	public int point;
 	public GUIText scoreText;
+	public AudioClip gameOverSFX;
 
 	// Use this for initialization
 	void Start () {
@@ -73,6 +74,8 @@ public class GameDirector : MonoBehaviour {
 
 	public void Die()
 	{
+		audio.Stop();
+		AudioManager.Instance.PlayOneShot(gameOverSFX);
 		//disable camera follow
 		GameObject.Find ("Main Camera").GetComponent<CameraMove>().enabled=false;
 		//destroy character
