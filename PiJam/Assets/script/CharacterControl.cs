@@ -48,7 +48,7 @@ public class CharacterControl : EndlessRunner
 
 	[HideInInspector]
 	public bool isUpper=false;
-
+	public AudioClip jumpSFX;
 
 	// private bool isUpper=false;
 
@@ -164,8 +164,12 @@ public class CharacterControl : EndlessRunner
 			//			AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
 			
 			// Add a vertical force to the player.
+
+			AudioManager.Instance.PlayOneShot(jumpSFX);
+
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
-			
+
+
 			//make suer player can jump on top of the upper platforms, can not put it in the on triggerEnter function
 			//in the down collider scripts, because the calculation is too slow
 			Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("UpperPlatform"));
