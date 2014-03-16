@@ -35,6 +35,7 @@ public class GameDirector : MonoBehaviour {
 	public int point;
 	public GUIText scoreText;
 	public AudioClip gameOverSFX;
+	public AudioClip btnSFX;
 
 	// Use this for initialization
 	void Start () {
@@ -113,17 +114,20 @@ public class GameDirector : MonoBehaviour {
 	{
 		if(GUI.Button (new Rect (Screen.width-100, 40, 30, 30), pauseTexture,btnStyle))
 		{
+			AudioManager.Instance.PlayOneShot(btnSFX);
 			Pause();
 		}
 		if(isPaused)
 		{
 			if (GUI.Button (new Rect (Screen.width/2-50, Screen.height/2-50, 100, 100), resumeTexture,btnStyle))// && CharacterControl.Instance.isDie)
 			{
+				AudioManager.Instance.PlayOneShot(btnSFX);
 				Resume();
 			}
 
 			if (GUI.Button (new Rect (70, 40, 35, 35), homeTexture,btnStyle))// && CharacterControl.Instance.isDie)
 			{
+				AudioManager.Instance.PlayOneShot(btnSFX);
 				Application.LoadLevel("StartMenu");
 			}
 			
@@ -133,6 +137,7 @@ public class GameDirector : MonoBehaviour {
 		{
 			if (GUI.Button (new Rect (Screen.width/2-50, Screen.height/2-50, 100, 100), restartTexture,btnStyle))
 			{
+				AudioManager.Instance.PlayOneShot(btnSFX);
 				Restart();
 			}
 		}
