@@ -128,6 +128,7 @@ public class GameDirector : MonoBehaviour {
 			if (GUI.Button (new Rect (70, 40, 35, 35), homeTexture,btnStyle))// && CharacterControl.Instance.isDie)
 			{
 				AudioManager.Instance.PlayOneShot(btnSFX);
+				Time.timeScale = 1;
 				Application.LoadLevel("StartMenu");
 			}
 			

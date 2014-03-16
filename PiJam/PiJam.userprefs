@@ -1,15 +1,13 @@
 ﻿<Properties>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Pee.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/GameDirector.cs">
     <Files>
       <File FileName="Assets/script/Pie.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/StartMenu.cs" Line="15" Column="18" />
+      <File FileName="Assets/script/StartMenu.cs" Line="1" Column="1" />
       <File FileName="Assets/script/CharacterControl.cs" Line="1" Column="1" />
       <File FileName="Assets/script/AI/PiEnemy.cs" Line="1" Column="1" />
       <File FileName="Assets/script/CameraMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/GameDirector.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/GameDirector.cs" Line="89" Column="25" />
       <File FileName="Assets/script/Coins.cs" Line="1" Column="1" />
       <File FileName="Assets/script/MicrophoneInputManager.cs" Line="1" Column="1" />
       <File FileName="Assets/script/GuestureManager.cs" Line="1" Column="1" />
@@ -17,25 +15,6 @@
       <File FileName="Assets/script/GroundGenerateChecker.cs" Line="1" Column="1" />
       <File FileName="Assets/script/BgGenerateChecker.cs" Line="1" Column="1" />
       <File FileName="Assets/script/AI/PiBird.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Boom.cs">
-    <Files>
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Boom.cs">
-    <Files>
->>>>>>> FETCH_HEAD
-      <File FileName="Assets/script/CharacterControl.cs" Line="155" Column="3" />
-      <File FileName="Assets/script/AI/PiPoo.cs" Line="7" Column="36" />
-      <File FileName="Assets/script/AI/PiEnemy.cs" Line="30" Column="47" />
-      <File FileName="Assets/script/GameDirector.cs" Line="82" Column="31" />
-      <File FileName="Assets/script/Pie.cs" Line="7" Column="28" />
-      <File FileName="Assets/Boom.cs" Line="8" Column="24" />
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
