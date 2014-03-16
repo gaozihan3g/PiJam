@@ -44,7 +44,7 @@ public class CharacterControl : EndlessRunner
 
 	public Transform shotPos;
 	public GameObject pee;
-	public float bulletSpeed;
+//	public float bulletSpeed;
 
 	[HideInInspector]
 	public bool isUpper=false;
@@ -179,7 +179,7 @@ public class CharacterControl : EndlessRunner
 		anim.SetTrigger ("Shot");
 		GameObject a;
 		a=(GameObject)Instantiate (pee,shotPos.position,Quaternion.identity);
-		a.rigidbody2D.velocity = Vector2.right * bulletSpeed;
+//		a.rigidbody2D.velocity = Vector2.right * bulletSpeed;
 	}
 
 	public void Die()
