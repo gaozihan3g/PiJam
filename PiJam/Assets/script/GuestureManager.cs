@@ -25,6 +25,9 @@ public class GuestureManager : MonoBehaviour {
 
 	void OnSwipe(SwipeGesture gesture) 
 	{
+		if (CharacterControl.Instance == null)
+			return;
+
 		// 大概的滑动方向
 		FingerGestures.SwipeDirection direction = gesture.Direction;
 		//Vector2 a = gesture.Direction;

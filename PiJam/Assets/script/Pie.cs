@@ -9,6 +9,7 @@ public class Pie : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rigidbody2D.velocity = new Vector3(speed, 0);
+		Destroy(gameObject, 3f);
 	}
 	
 	// Update is called once per frame
@@ -25,9 +26,9 @@ public class Pie : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 		
-		if(other.gameObject.tag=="UpperPlatform")
-		{
-			Destroy(this.gameObject);
-		}
+//		if(other.gameObject.tag=="UpperPlatform")
+//		{
+//			Destroy(this.gameObject);
+//		}
 	}
 }

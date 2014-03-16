@@ -191,6 +191,7 @@ public class CharacterControl : EndlessRunner
 		//show UI
 		isDie = true;
 		Destroy (this.gameObject);
+//		Time.timeScale = 0f;
 	}
 
 }

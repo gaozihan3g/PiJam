@@ -8,6 +8,8 @@ public class PiEnemy : EndlessRunner {
 	private SpriteRenderer _spriteRenderer;
 	public SpriteRenderer[] allRenderers;
 	public AudioClip splatSFX;
+	public GameObject oopsPrefab;
+	public AudioClip oopsSFX;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,8 @@ public class PiEnemy : EndlessRunner {
 	{
 		if (collision.gameObject.tag == "Player")
 		{
+			Instantiate(oopsPrefab, transform.position, Quaternion.identity);
+			AudioManager.Instance.PlayOneShot(oopsSFX);
 			GameDirector.Instance.Die();
 			print("GameOver");
 		}

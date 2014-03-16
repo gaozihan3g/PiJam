@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/CharacterControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Pie.cs">
     <Files>
       <File FileName="Assets/script/CharacterControl.cs" Line="51" Column="27" />
+      <File FileName="Assets/script/AI/PiPoo.cs" Line="7" Column="36" />
+      <File FileName="Assets/script/AI/PiEnemy.cs" Line="30" Column="47" />
+      <File FileName="Assets/script/GameDirector.cs" Line="78" Column="50" />
+      <File FileName="Assets/script/Pie.cs" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
