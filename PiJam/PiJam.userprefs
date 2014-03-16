@@ -1,12 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Pie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Pee.cs">
     <Files>
-      <File FileName="Assets/script/CharacterControl.cs" Line="51" Column="27" />
-      <File FileName="Assets/script/AI/PiPoo.cs" Line="7" Column="36" />
-      <File FileName="Assets/script/AI/PiEnemy.cs" Line="30" Column="47" />
-      <File FileName="Assets/script/GameDirector.cs" Line="78" Column="50" />
-      <File FileName="Assets/script/Pie.cs" Line="13" Column="3" />
+      <File FileName="Assets/script/Pie.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/StartMenu.cs" Line="15" Column="18" />
+      <File FileName="Assets/script/CharacterControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/AI/PiEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/CameraMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/GameDirector.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Coins.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/MicrophoneInputManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/GuestureManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Pee.cs" Line="16" Column="41" />
+      <File FileName="Assets/script/GroundGenerateChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/BgGenerateChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/AI/PiBird.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
