@@ -3,10 +3,16 @@ using System.Collections;
 
 public class GameDirector : MonoBehaviour {
 
+
 	private float currentGroundDis=0f;
 	public float moveBackDis;
 	public GameObject groundPrefab;
 	public float groundLength;
+	public float bgLength;
+
+	public GameObject bgPrefab;
+ 
+	private float currentBgDis=0f;
 
 
 	public static GameDirector Instance;
@@ -45,6 +51,7 @@ public class GameDirector : MonoBehaviour {
 		//Debug.Log (currentGroundDis);
 		moveBackEvent ();
 		currentGroundDis -= moveBackDis;
+		currentBgDis -= moveBackDis;
 	}
 
 	public void generateNewGround()
@@ -55,6 +62,13 @@ public class GameDirector : MonoBehaviour {
 		{
 			startMoveBack();
 		}
+	}
+
+
+	public void generateNewBg()
+	{
+		currentBgDis += bgLength;
+		Instantiate(bgPrefab, new Vector3(currentBgDis, 5.45f, 2f), Quaternion.identity);
 	}
 
 	public void Die()
@@ -94,7 +108,7 @@ public class GameDirector : MonoBehaviour {
 	
 	void OnGUI() 
 	{
-		if(GUI.Button (new Rect (Screen.width-150, 50, 100, 100), pauseTexture,btnStyle))
+		if(GUI.Button (new Rect (Screen.width-100, 40, 30, 30), pauseTexture,btnStyle))
 		{
 			Pause();
 		}
@@ -105,7 +119,7 @@ public class GameDirector : MonoBehaviour {
 				Resume();
 			}
 
-			if (GUI.Button (new Rect (50, 50, 100, 100), homeTexture,btnStyle))// && CharacterControl.Instance.isDie)
+			if (GUI.Button (new Rect (70, 40, 35, 35), homeTexture,btnStyle))// && CharacterControl.Instance.isDie)
 			{
 				Application.LoadLevel("StartMenu");
 			}

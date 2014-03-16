@@ -3,7 +3,17 @@ using System.Collections;
 
 public class StartMenu : MonoBehaviour {
 
-	void OnMouseDown() {
-		Application.LoadLevel("test1");
+	public Texture downTexture;
+
+	void OnMouseDown() 
+	{
+//		GameObject.GetComponent<"SpriteRenderer">.Sprite=downTexture;
+		this.guiTexture.texture = downTexture;
+			
+	}
+
+	void OnMouseUp()
+	{
+		Application.LoadLevel(1);
 	}
 }
