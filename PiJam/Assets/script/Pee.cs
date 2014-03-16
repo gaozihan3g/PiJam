@@ -21,9 +21,9 @@ public class Pee : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 
-		if(other.gameObject.tag=="UpperPlatform")
-		{
-			Destroy(this.gameObject);
-		}
+//		if(other.gameObject.tag=="UpperPlatform")
+//		{
+//			Destroy(this.gameObject);
+//		}
 	}
 }
