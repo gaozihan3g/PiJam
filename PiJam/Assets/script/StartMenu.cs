@@ -20,6 +20,7 @@ public class StartMenu : MonoBehaviour {
 
 	IEnumerator StartGame()
 	{
+		audio.Stop();
 		AudioManager.Instance.PlayOneShot(SFX);
 		yield return new WaitForSeconds(3f);
 		Application.LoadLevel(1);
