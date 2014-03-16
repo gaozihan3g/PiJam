@@ -4,6 +4,7 @@ using System.Collections;
 public class StartMenu : MonoBehaviour {
 
 	public Texture downTexture;
+	public AudioClip SFX;
 
 	void OnMouseDown() 
 	{
@@ -14,6 +15,13 @@ public class StartMenu : MonoBehaviour {
 
 	void OnMouseUp()
 	{
+		StartCoroutine(StartGame());
+	}
+
+	IEnumerator StartGame()
+	{
+		AudioManager.Instance.PlayOneShot(SFX);
+		yield return new WaitForSeconds(3f);
 		Application.LoadLevel(1);
 	}
 }
