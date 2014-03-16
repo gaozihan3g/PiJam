@@ -18,6 +18,7 @@ public class Pie : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+//		AudioManager.Instance.PlayOneShot(splatSFX);
 		if(other.gameObject.tag=="Enemy")
 		{
 			other.gameObject.SendMessage("Die");

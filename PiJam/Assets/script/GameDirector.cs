@@ -68,7 +68,7 @@ public class GameDirector : MonoBehaviour {
 
 	public void Restart()
 	{
-		Application.LoadLevel ("test1");
+		Application.LoadLevel (1);
 	}
 	
 	public void Pause()

@@ -7,6 +7,7 @@ public class PiEnemy : EndlessRunner {
 	public Sprite deadEnemy;
 	private SpriteRenderer _spriteRenderer;
 	public SpriteRenderer[] allRenderers;
+	public AudioClip splatSFX;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,9 @@ public class PiEnemy : EndlessRunner {
 	void Die()
 	{
 		print("Die");
+
+		AudioManager.Instance.PlayOneShot(splatSFX);
+
 		//disable all sprite renderers
 		foreach (SpriteRenderer sr in allRenderers)
 			sr.enabled = false;
