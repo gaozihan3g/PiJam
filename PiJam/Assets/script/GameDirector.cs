@@ -103,7 +103,7 @@ public class GameDirector : MonoBehaviour {
 	public void ChangeScore()
 	{
 		point++;
-		scoreText.text = "score      " + point;
+		scoreText.text = "score    " + point;
 	}
 	
 

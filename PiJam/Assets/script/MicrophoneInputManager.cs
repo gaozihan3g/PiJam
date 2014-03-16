@@ -63,6 +63,8 @@ public class MicrophoneInputManager : MonoBehaviour {
 
 	void Fire()
 	{
+		if (CharacterControl.Instance == null)
+			return;
 		if (CheckCooldown())
 		{
 			CharacterControl.Instance.SendMessage("shot");
