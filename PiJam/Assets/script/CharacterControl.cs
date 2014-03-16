@@ -157,7 +157,7 @@ public class CharacterControl : EndlessRunner
 		if(grounded && vSpeed==0)
 		{
 			// Set the Jump animator trigger parameter.
-			anim.SetTrigger("Jump");
+//			anim.SetTrigger("Jump");
 			
 			// Play a random jump audio clip.
 			//			int i = Random.Range(0, jumpClips.Length);

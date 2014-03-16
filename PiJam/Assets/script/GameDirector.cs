@@ -9,7 +9,7 @@ public class GameDirector : MonoBehaviour {
 	public float groundLength;
 
 
-	public static GameDirector Instance=new GameDirector();
+	public static GameDirector Instance;
 	public delegate void moveBack();
 	public static event moveBack moveBackEvent;
 
